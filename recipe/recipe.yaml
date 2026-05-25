@@ -10,11 +10,10 @@ package:
 
 source:
   url: https://github.com/nawendt/gempakio/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 101491c658e8db06c418c13208f9936b3f00ed1aae8b5bc5c865fcf231ea497a
-
+  sha256: 3bd3ae15b5f0635a816378552e99e259bfd605b9980ad219d98d1bb91a62aec1
 build:
   noarch: python
-  number: 0
+  number: 1
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
